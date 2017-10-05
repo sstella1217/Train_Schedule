@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Schedule</title>
+ 	<meta charset="UTF-8">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <img src=assets/images/train.png>
+    <p>TRAIN SCHEDULE</p>
+  </div>
+</div>
+
+	<div class="panel panel-default">
+  	<div class="panel-heading">
+    	<h3 class="panel-title">Current Train Schedule</h3>
+  </div>
+  	<div class="table">
+
+  		<table class="table table-bordered" id=infoTable>
+  			<th>Train Name</th>
+  			<th>Destination</th>
+  			<th>Frequency</th>
+  			<th>Next Arrival</th>
+  			<th>Minutes Away</th>
+			</table>
+
+		</div>
+
+</div>
+	<div class="panel panel-default">
+  	<div class="panel-heading">
+    	<h3 class="panel-title">Add Train</h3>
+		</div>
+   	<form>
+  		<div class="form-group">
+    		<label for="InputTrainName">Train Name</label>
+    		<input type="text" class="form-control" id="InputTrainName">
+  		</div>
+  		<div class="form-group">
+    		<label for="exampleInputDestination">Destination</label>
+    		<input type="text" class="form-control" id="InputDestination">
+  		</div>
+			<div class="form-group">
+    		<label for="exampleInputFirstTrainTime">First Train Time (Military Time)</label>
+    		<input type="text" class="form-control" id="InputFirstTrainTime">
+  		</div>
+			<div class="form-group">
+    		<label for="exampleInputFrequency">Frequency (In minutes)</label>
+    		<input type="text" class="form-control" id="InputFrequency">
+  		</div>
+  		<button type="submit" class="btn btn-default" id="submit">Submit</button>
+		</form>
+
+	</div>
+
+</div>
+
+<script src="assets/javascript/script.js"></script>
+
+</body>
+</html>

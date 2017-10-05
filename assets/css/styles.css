@@ -1,0 +1,50 @@
+.container{
+	width: 980px;
+	height:500px;
+ }
+
+.panel-body{
+	border: 1px darkred;
+	text-align:center;
+	background-color:#7F1E19;
+	color:white;
+	font-family: 'Francois One', sans-serif;
+	font-size: 48px;
+	border-radius: 10px;
+	height: 200px;
+
+}
+th{text-align: center;}
+
+.trainData {
+	text-align: left;
+
+}
+
+.destData {
+	text-align: left;
+}
+
+.freqData {
+	text-align: left;
+}
+
+.nextData{
+	text-align: left;
+}
+
+.btn-default{
+	margin-left: 5px;
+	background-color:#7F1E19;
+	color: white;
+	margin-bottom: 2px;
+}
+
+.minData{
+	text-align: left;
+}
+
+.form-group{
+	margin-left: 5px;
+	margin-top: 5px;
+}
